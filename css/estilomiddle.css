@@ -1,0 +1,135 @@
+section#unica{
+    position:relative;
+    width: 95vw; /* Comentário */
+    height:auto;
+    font-family:var(--fonte2);
+    text-align:center;
+}
+
+section#unica div#curiosidades{
+    margin:0 auto;
+    width:90vw;
+    height:auto;
+}
+
+section#unica div#curiosidades div.item{
+    width:300px;
+    height:190px;
+    float: left;
+    position:relative;
+    margin-left:10px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    left:calc((100% - 930px)/2);
+  
+}
+
+section#unica div#curiosidades div.item div.interior{
+    width:100%;
+    height:100%;
+    transform-style:preserve-3d;
+    transition: transform 0.8s;
+}
+
+section#unica div#curiosidades div.item:hover div.interior{
+   transform: rotateY(180deg);
+}
+
+section#unica div#curiosidades div.item div.interior div.frente img{
+    width:100%;
+    height:100%
+}
+
+section#unica div#curiosidades div.item div.interior div.frente,
+section#unica div#curiosidades div.item div.interior div.atras{
+    width:100%;
+    height:100%;
+    position:absolute;
+    backface-visibility: hidden;
+}
+
+section#unica div#curiosidades div.item div.interior div.atras{
+    background-color: rgb(72,0,1);
+    color:white;
+    transform: rotateY(180deg);
+}
+
+section#unica div#curiosidades div.item div.interior div.atras h1{
+    font-size: 0.9rem;
+}
+
+section#unica div#curiosidades div.item div.interior div.atras p{
+    font-size: 0.7rem;
+    text-align: justify;
+    padding:2px 12px;
+    line-height: 18px;
+}
+
+section#unica div#curiosidades div.clearfix{
+    clear:both;
+}
+
+section#unica div.sinopse{
+    width:95vw;
+    margin-top:40px;
+}
+
+section#unica div.sinopse p.resumo{
+    text-align: justify;
+    line-height: 35px;
+    margin-left:15px;
+}
+
+section#unica div#elenco{
+   position:relative;
+   width:100%;
+   margin-left: 0px; 
+}
+
+section#unica div#elenco div#atores{
+    position:relative;
+    width:960px;
+    height:700px;
+    margin: 0 auto;
+    top:20px;
+}
+
+section#unica div#elenco div#atores a div.ator{
+    position:relative;
+    width:210px;
+    height:238px;
+    float:left;
+    background-color: black;
+    border:1px solid red;
+    margin-left:20px;
+    margin-bottom:80px;
+}
+
+section#unica div#elenco div#atores a div.ator h2.personagem{
+	position:relative;
+	font-family:var(--fonte1);
+	color:red;
+	
+}
+
+section#unica div#elenco div#atores a div.ator p.nome{
+	position:relative;
+	font-family:var(--fonte1);
+	font-size:0.9rem;
+	text-align:center;
+    color:white;
+}
+
+
+section#unica div#elenco div#atores a div.ator img.top{
+    position:absolute;
+    left:0px;
+    bottom:0px;
+    width:100%;
+    height:100%;
+	transition:bottom .3s ease-in-out;
+
+}
+
+section#unica div#elenco div#atores a div.ator img.top:hover{
+	bottom:-100px;
+}

@@ -1,0 +1,186 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Sarpanch:wght@400;500;600;700;800;900&display=swap');
+
+:root{
+    --fonte1:"Sarpanch", serif;
+    --fonte2:"Verdana", sans-serif;
+    --fontSize: 16px;
+}
+
+html, body{
+    font-family:var(--fonte1);
+    font-size:var(--fontSize);
+    margin:0px;
+    padding:0px;
+    width:100vw;
+}
+
+header#cabecalho img#figfundo{
+   width: 100vw;
+   height:95vh;
+}
+
+header#cabecalho nav#menu{
+    position:absolute;
+    top:0px;
+    background-color: rgba(0,0,0,0.7);
+    width:100vw;
+    height:20vh;
+    display:block;
+}
+
+header#cabecalho nav#menu ol{
+    list-style: none;
+    text-align:center;
+    padding-top: 2px;
+    height:15vh;
+}
+
+header#cabecalho nav#menu ol li{
+    display:inline-block;   
+    vertical-align: middle;
+}
+
+header#cabecalho nav#menu ol li#imagem a img{
+    width:100px;
+    height:100px;
+    text-decoration: none;
+}
+
+header#cabecalho nav#menu ol li a{
+    color:white;
+    padding:15px;
+    text-decoration: none;
+}
+    
+header#cabecalho nav#menu ol li a:hover{
+    border-bottom:3px solid white;
+}
+
+header#cabecalho nav#menu ol li#imagem a:hover{
+    border-bottom:none;
+}
+
+header#cabecalho nav#menu ol li ol.submenu{
+    display:none;
+    width:150px;
+}
+
+header#cabecalho nav#menu ol li:hover ol.submenu{
+    position:absolute;
+    top:100px;
+    display:block;
+    background-color: rgba(0,0,0,0.7);
+    height:auto;
+   
+}
+
+header#cabecalho nav#menu ol li:hover ol.submenu li{
+    height:40px;
+    left:-20px;
+    font-size:0.8rem;
+}
+
+header#cabecalho nav#menu ol li:hover ol.submenu li a:hover{
+    border:none;
+    color:red;
+}
+
+/*----- Resolução do header ----- */
+
+@media only screen and (max-width:614px){
+	header#cabecalho img#figfundo{
+	   height:210px;
+	}
+
+	header#cabecalho nav#menu{
+		height:9vh;
+		font-size:0.6rem;
+		
+	}
+
+	header#cabecalho nav#menu ol{
+		padding-top: 0px;
+		height:9vh;
+	}
+
+	header#cabecalho nav#menu ol li#imagem a img{
+		width:40px;
+		height:40px;
+	}
+
+	header#cabecalho nav#menu ol li a{
+		padding:6px;		
+	}
+		
+	header#cabecalho nav#menu ol li a:hover{
+		border-bottom:2px solid white;
+	}
+
+	header#cabecalho nav#menu ol li ol.submenu{
+		width:110px;
+	}
+
+	header#cabecalho nav#menu ol li:hover ol.submenu{
+		top:45px;		   
+	}
+
+	header#cabecalho nav#menu ol li:hover ol.submenu li{
+		height:20px;
+		font-size:0.6rem;
+	}
+
+	header#cabecalho nav#menu ol li:hover ol.submenu li a:hover{
+		border:none;
+		color:red;
+	}	
+}
+
+@media only screen and (min-width:615px) and (max-width:1200px){
+	header#cabecalho img#figfundo{
+	   height:350px;
+	}
+
+	header#cabecalho nav#menu{
+		height:12vh;
+		font-size:0.8rem;
+		
+	}
+
+	header#cabecalho nav#menu ol{
+		padding-top: 1px;
+		
+	}
+
+	header#cabecalho nav#menu ol li#imagem a img{
+		width:50px;
+		height:50px;
+	}
+
+	header#cabecalho nav#menu ol li a{
+		padding:6px;		
+	}
+		
+	header#cabecalho nav#menu ol li a:hover{
+		border-bottom:2px solid white;
+	}
+
+	header#cabecalho nav#menu ol li ol.submenu{
+		width:120px;
+	}
+
+	header#cabecalho nav#menu ol li:hover ol.submenu{
+		top:55px;		   
+	}
+
+	header#cabecalho nav#menu ol li:hover ol.submenu li{
+		height:30px;
+		font-size:0.7rem;
+	}
+
+	header#cabecalho nav#menu ol li:hover ol.submenu li a:hover{
+		border:none;
+		color:red;
+	}	
+}
